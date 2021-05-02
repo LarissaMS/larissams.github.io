@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h1 {
+      font-size: 32px;
+      margin: 0 auto;
+      padding: 15px 20px;
+      text-align: center;
+    }
+    h2 {
+      font-size: 30px;
+      font-weight: 500;
+      margin: 20px auto;
+      text-align: center;
+    }
+    img {
+      display: block;
+      margin: 30px auto;
+      width: 450px;
+    }
+    button {
+      background: #a14a66;
+      border: none;
+      border-radius: 4px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      color: white;
+      display: block;
+      margin: 0 auto;
+      padding: 15px 25px;
+      transition: all 200ms ease-in-out;
+    }
+    button:hover {
+      background-color: transparent;
+      border: 1px solid #a14a66;
+      color: #a14a66;
+      cursor: pointer;
+    }
+    hr {
+      border-top: 1px solid white;
+    }
+    .pageOwner {
+      font-size: 10px;
+      margin-top: 30px;
+      text-align: center;
+    }
+    .painter {
+      color: #b67287;
+    }
+    .content {
+      background: linear-gradient(#b9cee2, #CDA4AC);
+      border-radius: 6px;
+      color: white;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      line-height: 1.5;
+      margin: 30px auto;
+      max-width: 65%;
+      padding: 30px;
+    }
+    .readMore {
+      color: #a14a66;
+      display: block;
+      margin-top: 20px;
+      text-decoration: none;
+      text-align: center;
+    }
+    .readMore:hover{
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+  <h1>
+    Claude Monet
+  </h1>
+  <hr />
+  <h2>
+    Master & Defender of Impressionism
+  </h2>
+  <hr />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Claude_Monet%2C_sunset-on-the-seine-at-lavacourt-winter-effect.jpg/1600px-Claude_Monet%2C_sunset-on-the-seine-at-lavacourt-winter-effect.jpg"
+  alt="Monet Sunset on the Seine" />
+  <hr />
+  <p>Claude Monet – it is a name that has become nearly synonymous with the term impressionism. One of the world’s most
+    celebrated and well-known painters, it was his work, <em>Impressionism, Sunrise,</em> that gave a name to that first distinctly
+    modern art movement, Impressionism. As the pivotal movement’s founding father, Monet’s remarkable oeuvre occupies a
+    central place in the history of art, and he is credited for influencing generations of artists to come. Today, Monet's
+    painting style can be seen throughout museums across the world and is a highly sought-after style for art collectors
+    everywhere.
+  </p>
+  <p><strong>Early Years in Paris
+     </strong>
+     <br />
+    It was the French landscape painter <span class="painter">Eugène Boudin</span> who would help lead Monet to his impressionist style.
+    He met Monet in 1858, and, recognizing his talent, took the budding artist along with him on landscape painting excursions
+    into the countryside. These outings were Monet's first introduction to painting en plein air, and from Boudin he learned to
+    observe and record the effects of light, tonal values, and perspective. The lessons would undoubtedly change the course of
+    his career as an impressionist painter.
+  </p>
+  <p>While Boudin first opened Monet to the possibilities of painting, Paris was where his revolutionary style would evolve
+    and flourish. He moved there in 1859 to study at the Atelier Suisse, forming a friendship with <span class="painter">Camille Pissarro</span>.
+    After serving briefly in the military, Monet returned to Paris to enroll in the studio of the Swiss painter
+    <span class="painter">Charles Gleyre</span>. Remembered today more for his instruction than his production, 
+    Gleyre taught a number of young artists who rose to prominence - Monet, <span class="painter">Pierre-Auguste Renoir</span>,
+    <span class="painter">Alfred Sisley</span>, <span class="painter">James Abbott McNeill Whistler</span>, 
+    <span class="painter">Jean-Léon Gérôme</span>, <span class="painter">Jean-Louis Hamon</span> and
+    <span class="painter">Louis-Frederic Schützenberger</span>, among others, all passed through his studio.
+  </p>
+  <a href="https://rauantiques.com/blogs/canvases-carats-and-curiosities/claude-monet-father-impressionism" target="_blank" class="readMore">
+    Read more about Claude Monet
+  </a>
+  <br />
+  <button>
+    Sign up for a Monet art class here
+  </button>
+  <p class="pageOwner">
+    Coded by Larissa Sequeira
+  </p>
+  <script>
+    function signUp () {
+    let name = prompt("What is your name?");
+    let age = prompt("How old are you?");
+    if (age >= 18){
+      alert("Thank you for your interest, " + name + ", we will be in touch with you!");
+    } else {
+      alert("Sorry, " + name + ", you are too young for our art class!");
+    }
+    }
+    let signupButton = document.querySelector("button");
+    signupButton.addEventListener("click", signUp)
+  </script>
+  </div>
+</body>
+</html>
